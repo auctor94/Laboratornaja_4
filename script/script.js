@@ -1,3 +1,4 @@
+
 function validate(form) {
     var valid = true;
     var elems = form.elements;
@@ -64,13 +65,13 @@ function validateEmail(email) {
 }
 
 function validateName(name) {
-    var re = /^[А-Я][а-я]{2,10}$/;
+    var re = /^[а-яА-ЯёЁa-zA-Z. ]+$/;
     return re.test(name);
 }
 
 
 function validateSurname(surname) {
-    var re = /^[А-Я][а-я]{2,10}$/;
+    var re = /^[а-яА-ЯёЁa-zA-Z. ]+$/;
     return re.test(surname);
 }
 
@@ -94,6 +95,7 @@ n = 0;
 
 
 function show() {
+    alert("here i am");
     names[n] = document.opros.name.value;
     surnames[n] = document.opros.surname.value;
     emails[n] = document.opros.email.value;
